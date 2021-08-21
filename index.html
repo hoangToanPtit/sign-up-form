@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-wi
+  dth, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Form Validation</title>
+</head>
+<body>
+  <div class="form-wrap">
+    <form action="" class='form'>
+      <div class="form-header">
+        <h3 class="heading">Sign Up</h3>
+        
+        <div class="desc">
+          <p class="desc-text">Already have a account?</p>
+          <a class="nav" href="#">Sign in</a>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="fullName" class="form-lable">Username</label>
+        <input type="text" id="fullName" class="form-input" name="fullName" placeholder="eg: Hoang Toan">
+        <span class="form-message"></span>
+      </div>
+  
+      <div class="form-group">
+        <label for="email" class="form-lable">Email</label>
+        <input type="text" id="email" class="form-input" name="email" placeholder="eg: Hoang Toan">
+        <span class="form-message"></span>
+      </div>
+  
+      <div class="form-group">
+        <label for="password" class="form-lable">Password</label>
+        <input type="password" id="password" class="form-input " name="password" placeholder="Enter the password">
+        <span class="form-message"></span>
+        <span class="toggle-password"><i class="far fa-eye-slash"></i></span>
+      </div>
+  
+      <div class="form-group">
+        <label for="confirm-password" class="form-lable">Confirm password</label>
+        <input type="password" id="confirm-password" class="form-input" name="confirm-password" placeholder="Repeat the password">
+        <span class="form-message"></span>
+        <span class="toggle-password"><i class="far fa-eye-slash"></i></span>
+      </div>
+  
+      <button class=" form-submit invalid
+        ">SIGN UP<i class="fas fa-arrow-right"></i></button>
+
+    </form>
+
+    <div class="notifySubmit notify-success invisible">
+      <span class="notify-icon"><i class="far fa-check-circle"></i></span>
+      <p class="notify-mess">
+          Successfully!
+      </p>
+    </div>
+  </div>
+  <script src="./signUp.js"></script>
+</body>
+</html>
