@@ -165,6 +165,7 @@ btnSubmit.onclick = function(e){
         notifyElement.classList.remove('invisible');
         setTimeout(() => {
             notifyElement.classList.add('invisible');
+            btnSubmit.className.add('invalid');
             var inputElement = document.querySelectorAll('input');
             for(x of inputElement)
                 x.value='';
