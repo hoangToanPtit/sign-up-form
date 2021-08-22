@@ -97,7 +97,7 @@ email.onblur = function(){
 
 // solve password
 var checkPassWord = false;
-var lengthPassword = 8;
+var lengthPassword = 5;
 var messOfPassWord = document.querySelector('#password ~ .form-message');
 
 function confirmPassword(password, confirmPassword){
@@ -165,9 +165,9 @@ btnSubmit.onclick = function(e){
         notifyElement.classList.remove('invisible');
         setTimeout(() => {
             notifyElement.classList.add('invisible');
-            btnSubmit.className.add('invalid');
-            var inputElement = document.querySelectorAll('input');
-            for(x of inputElement)
+            btnSubmit.classList.add('invalid');
+            var inputElements = document.querySelectorAll('input');
+            for(x of inputElements)
                 x.value='';
         }, 1500);
     }
